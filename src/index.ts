@@ -15,9 +15,9 @@
 	
 */
 
-import process from 'node:process';
-import console from 'node:console';
+import { JovaServer } from '@bracketed/jova.js';
 
-console.log('Welcome to my script!');
+const application = new JovaServer();
 
-process.exit(0);
+application.listen(3000);
+

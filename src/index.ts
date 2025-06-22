@@ -20,4 +20,3 @@ import { JovaServer } from '@bracketed/jova.js';
 const application = new JovaServer();
 
 application.listen(3000);
-

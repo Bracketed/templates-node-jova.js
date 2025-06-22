@@ -1,11 +1,11 @@
 import {
 	ApplicationRegistry,
-	ApplicationRequest,
-	ApplicationResponse,
+	type ApplicationRequest,
+	type ApplicationResponse,
 	ApplicationRoute,
 	Methods,
 	RouteController,
-} from '@bracketed/jova.js/types';
+} from '@bracketed/jova.js';
 
 export class Route extends RouteController {
 	public override registerApplicationRoutes(registry: ApplicationRegistry): ApplicationRoute {
@@ -24,4 +24,3 @@ export class Route extends RouteController {
 		return response.status(200).json({ message: 'Hello World!' });
 	}
 }
-

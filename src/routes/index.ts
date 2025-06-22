@@ -11,7 +11,7 @@ export class Route extends RouteController {
 	public override registerApplicationRoutes(registry: ApplicationRegistry): ApplicationRoute {
 		return registry.registerApplicationRoutes((route) =>
 			route //
-				.setRouteName('')
+				.setPath('')
 				.setMethod(Methods.GET)
 		);
 	}
